@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/NODDL/Verilog_Practice/eq2/eq2.srcs/sim_1/new/tb_eq2.v" into library xil_defaultlib
+ERROR: [VRFC 10-4982] syntax error near 'l0ps' [C:/Users/NODDL/Verilog_Practice/eq2/eq2.srcs/sim_1/new/tb_eq2.v:1]
+INFO: [VRFC 10-311] analyzing module tb_eq2
+ERROR: [VRFC 10-8530] module 'tb_eq2' is ignored due to previous errors [C:/Users/NODDL/Verilog_Practice/eq2/eq2.srcs/sim_1/new/tb_eq2.v:3]

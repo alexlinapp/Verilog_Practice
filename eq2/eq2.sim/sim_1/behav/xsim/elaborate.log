@@ -1,0 +1,22 @@
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_eq2_behav xil_defaultlib.tb_eq2 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/NODDL/Verilog_Practice/eq2/eq2.srcs/sources_1/new/eq2.v" Line 1. Module eq2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/NODDL/Verilog_Practice/eq2/eq2.srcs/sources_1/new/eq1.v" Line 1. Module eq1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/NODDL/Verilog_Practice/eq2/eq2.srcs/sources_1/new/eq1.v" Line 1. Module eq1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/NODDL/Verilog_Practice/eq2/eq2.srcs/sources_1/new/eq2.v" Line 1. Module eq2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/NODDL/Verilog_Practice/eq2/eq2.srcs/sources_1/new/eq1.v" Line 1. Module eq1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/NODDL/Verilog_Practice/eq2/eq2.srcs/sources_1/new/eq1.v" Line 1. Module eq1 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.eq1
+Compiling module xil_defaultlib.eq2
+Compiling module xil_defaultlib.tb_eq2
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_eq2_behav
