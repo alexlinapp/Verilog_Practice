@@ -5,6 +5,9 @@ module q7();
     typedef bit [6:0] sevenBit;
     struct packed {sevenBit header; sevenBit cmd; sevenBit data; sevenBit crc;} myStruct;
     
+    typedef enum {RED, BLUE, GREEN} color_e;
+    color_e color;
+    
     initial begin
         assoa_array[0] = 24'hA50400;
         assoa_array[30'h400] = 24 'h123456;
@@ -16,6 +19,16 @@ module q7();
             end
         $display("Array size is: %0d", $size(assoa_array));
         $display("My Struct: %0h", myStruct.header);
+
+        
+        color = color.first;
+        $display("REACHED HERE");
+        do
+            begin
+                $display("Color = %0d/%s", color, color.name());
+                color = color.next();
+            end
+        while (color != color.first());
     end
 
 
