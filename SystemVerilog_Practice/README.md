@@ -10,3 +10,7 @@ To execute the program, run the following commands in order:
     xelab <top_module_name> -s <sim_name>
     xsim <sim_name> -runall
 
+To view an interactive waveform:
+
+    xsim <sim_name> -gui
+
