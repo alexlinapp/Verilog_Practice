@@ -1,0 +1,1 @@
+C:\Users\NODDL\Verilog_Practice\SystemVerilog_Practice\ALU_Verification\tb\forks.sv

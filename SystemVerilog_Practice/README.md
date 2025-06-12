@@ -14,3 +14,7 @@ To view an interactive waveform:
 
     xsim <sim_name> -gui
 
+To build add `UVM_HOME` to environment variables and run:
+
+    xvlog --sv %UVM_HOME%/xlnx_uvm_package.sv
+
