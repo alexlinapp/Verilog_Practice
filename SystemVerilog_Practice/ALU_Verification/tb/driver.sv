@@ -36,7 +36,7 @@ package driver_pkg;
         //  user defined function
         virtual task automatic drive();
             $display("Values being driven: %0d, %0d, %0d", req.a, req.b, req.ALUControl);
-            $display("Finished dasdasdasdriving values: ");
+            //$display("Finished dasdasdasdriving values: ");
             @`DRIV_IF;
             vif.driver_cb.a <= req.a;
             `DRIV_IF.b <= req.b;

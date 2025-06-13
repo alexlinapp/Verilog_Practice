@@ -5,10 +5,11 @@ package agent_pkg;
     import seq_pkg::*;
     import sequence_item_pkg::*;
     import sequencer_pkg::*;
+    import monitor_pkg::*;
     class alu_agent extends uvm_agent;
         dataDriver driver;
         dataSequencer sequencer;
-
+        alu_monitor monitor;
         //  UVM Automation macros for general components
         `uvm_component_utils(alu_agent);
 
@@ -22,6 +23,7 @@ package agent_pkg;
             super.build_phase(phase);
             driver = dataDriver::type_id::create("driver", this);
             sequencer = dataSequencer::type_id::create("sequencer", this);
+            monitor = alu_monitor::type_id::create("monitor", this);
         endfunction
 
         function void connect_phase(uvm_phase phase);
