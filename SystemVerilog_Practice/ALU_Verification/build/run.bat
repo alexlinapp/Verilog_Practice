@@ -11,15 +11,16 @@ if errorlevel 1 (
     exit /b
 )
 
+
 echo ==== Elaborating ====
-call xelab -L uvm fork1 -s fork1
+call xelab -L uvm tbtop -s tbtop
 if errorlevel 1 (
     echo xelab failed!
     exit /b
 )
 
 echo ==== Simulating ====
-call xsim fork1 -runall
+call xsim tbtop -runall
 if errorlevel 1 (
     echo xsim failed!
     exit /b
