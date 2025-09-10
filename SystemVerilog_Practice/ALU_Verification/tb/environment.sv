@@ -21,7 +21,7 @@ package env_pkg;
         endfunction
 
         function void connect_phase(uvm_phase phase);
-            super.build_phase(phase);
+            //super.build_phase(phase);
             agent.monitor.item_collected_port.connect(scoreboard.item_collected_export);
         endfunction
     endclass //alu_env extends uvm_env

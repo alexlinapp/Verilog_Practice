@@ -21,12 +21,12 @@ package driver_pkg;
         endfunction
         virtual task automatic run_phase(uvm_phase phase);
             super.run_phase(phase);
-            $display("AM I EVEN HERE?");
+            //$display("AM I EVEN HERE?");
             forever begin
                 seq_item_port.get_next_item(req);   //  protected seq_item_port that lives inside the uvm_driver class
-                $display("IM HERE!");
+                //$display("IM HERE!");
                 drive();
-                $display("IM HERE!");
+                //$display("IM HERE!");
                 seq_item_port.item_done();
             end
             
