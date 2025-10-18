@@ -3,33 +3,37 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="lfsr_TB_behav.wdb" id="1">
+      <db_ref path="bin_graycode_TB_behav.wdb" id="1">
          <top_modules>
+            <top_module name="bin_graycode_TB" />
             <top_module name="glbl" />
-            <top_module name="lfsr_TB" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="542.361151666 ms"></ZoomStartTime>
-      <ZoomEndTime time="727.604951667 ms"></ZoomEndTime>
-      <Cursor1Time time="696.730985000 ms"></Cursor1Time>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,000.001 ns"></ZoomEndTime>
+      <Cursor1Time time="1,000.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="95"></NameColumnWidth>
+      <NameColumnWidth column_width="91"></NameColumnWidth>
       <ValueColumnWidth column_width="90"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="3" />
-   <wvobject fp_name="/lfsr_TB/clk" type="logic">
+   <WVObjectSize size="4" />
+   <wvobject fp_name="/bin_graycode_TB/bin_i" type="array">
+      <obj_property name="ElementShortName">bin_i[3:0]</obj_property>
+      <obj_property name="ObjectShortName">bin_i[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bin_graycode_TB/gray_o" type="array">
+      <obj_property name="ElementShortName">gray_o[3:0]</obj_property>
+      <obj_property name="ObjectShortName">gray_o[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bin_graycode_TB/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
-   <wvobject fp_name="/lfsr_TB/reset" type="logic">
-      <obj_property name="ElementShortName">reset</obj_property>
-      <obj_property name="ObjectShortName">reset</obj_property>
-   </wvobject>
-   <wvobject fp_name="/lfsr_TB/lfsr_o" type="array">
-      <obj_property name="ElementShortName">lfsr_o[3:0]</obj_property>
-      <obj_property name="ObjectShortName">lfsr_o[3:0]</obj_property>
+   <wvobject fp_name="/bin_graycode_TB/VEC_W" type="array">
+      <obj_property name="ElementShortName">VEC_W[31:0]</obj_property>
+      <obj_property name="ObjectShortName">VEC_W[31:0]</obj_property>
    </wvobject>
 </wave_config>
