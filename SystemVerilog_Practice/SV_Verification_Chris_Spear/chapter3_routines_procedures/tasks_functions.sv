@@ -30,16 +30,36 @@ module top;
         // Requesst bus and drive address
         //bus_request <= 1'b1
 
-endtask : bus_read
+    endtask : bus_read
+
+    function automatic void init(ref int f[5], input int start);
+        foreach (f[i])
+            f[i] = start + i;
+    endfunction
+
+
+
+
+
+
+
+
+
 
     
     bit [31:0] data_array[] = new[3];
+    int fa[5];
 
     initial begin
         #5;
         data_array = '{32'hDEAD_BEEF, 32'hC0DE_CAFE, 32'hBAAD_F00D};
         $display("RUNNING\n");
         print_csmll(data_array);    // array literal in system verilog
+        init(fa, 10);
+        foreach (fa[i]) begin
+            $display("fa[%0d] = %0d", i, fa[i]);
+        end
+
     end
     
     
