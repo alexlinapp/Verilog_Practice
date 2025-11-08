@@ -143,7 +143,7 @@ program automatic APB_prog(APB_if.TEST arb_if);
         else $display("Failed test1_1: Exepected: %0h, Actual: %0d", 32'hDEAD_CAFE, arb_if.cb.paddr_o);
         $display("Time = %0t ns", $time);
         repeat (2) @(arb_if.cb);
-        arb_if.cb.pready_i <= 1'b1;
+        arb_if.cb.pready_i <= 1'b1; // executes in same time delta as previous clock block
         arb_if.cb.prdata_i <= 5;
         @(arb_if.cb);   // will sample previous
         arb_if.cb.pready_i <= 1'b0;
