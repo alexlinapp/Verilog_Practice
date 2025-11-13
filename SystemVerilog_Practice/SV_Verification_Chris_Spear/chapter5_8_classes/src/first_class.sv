@@ -32,7 +32,7 @@ class Transaction;
     // use the extern keyword for this
     extern function void extern_display();
 
-
+    endfunction
 
 endclass : Transaction
 

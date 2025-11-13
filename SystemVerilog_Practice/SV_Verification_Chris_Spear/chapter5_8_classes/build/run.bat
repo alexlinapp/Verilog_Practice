@@ -1,3 +1,4 @@
+REM REM is used to specify comments. Below shows how to run.
 REM run.bat <top_name> [-uvm]
 
 
